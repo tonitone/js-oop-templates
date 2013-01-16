@@ -40,33 +40,59 @@ var cFunctionBasedClass = function () {
 	/**
 	 * @public
 	 */
+	this.getOptions = function () {
+		return oOptions;
+	};
+
+	/**
+	 * @public
+	 */
 	this.init = function () {
-		console.log('public', 'this.init');
-		privateFunction();
+		privateMethod();
+	};
+
+	/**
+	 * @public
+	 * @param value
+	 */
+	this.setBPrivate = function (value) {
+		bPrivate = value;
+	};
+
+	/**
+	 * @public
+	 */
+	this.getBPrivate = function () {
+		return bPrivate;
 	};
 
 	/**
 	 * @private
 	 */
-	var privateFunction = function () {
+	var privateMethod = function () {
 		console.log('private', 'privateFunction');
 	};
 
 };
 
-var cMyClass = new cFunctionBasedClass();
+/*
+ var cMyClass = new cFunctionBasedClass();
 
-cMyClass.setOptions(
-		{
-			one:'one',
-			two:'two'
-		}
-);
+ cMyClass.setOptions(
+ {
+ one:'one',
+ two:'two'
+ }
+ );
 
-cMyClass.init();
+ cMyClass.init();
 
-/* works */
-console.log(cMyClass.bPublic);
+ */
+/* works *//*
 
-/* wont work */
-console.log(cMyClass.bPrivate);
+ console.log(cMyClass.bPublic);
+
+ */
+/* wont work *//*
+
+ console.log(cMyClass.bPrivate);*/
