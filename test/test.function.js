@@ -25,7 +25,7 @@ test("change public property cMyClass.bPublic directly to false", function () {
 	deepEqual(cMyClass.bPublic, false, "cMyClass.bPublic is false");
 });
 
-test("return cMyClass.setOptions", function () {
+test("return cMyClass.getOptions", function () {
 	deepEqual(cMyClass.getOptions(), {one:1, two:2}, "cMyClass.getOptions return {one: 1, two: 1}");
 });
 
