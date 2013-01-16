@@ -1,4 +1,6 @@
 js-oop-templates
 ================
 
-Javascript OOP Templates
+how can we write javascript classes and test them.
+
+functions.js = function based style
