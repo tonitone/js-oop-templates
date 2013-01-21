@@ -20,6 +20,7 @@ test("Checking private methods === undefined", function () {
 test("check public property cMyClass.bPublic", function () {
 	deepEqual(cMyClass.bPublic, true, "cMyClass.bPublic is true");
 });
+
 test("change public property cMyClass.bPublic directly to false", function () {
 	cMyClass.bPublic = false;
 	deepEqual(cMyClass.bPublic, false, "cMyClass.bPublic is false");
